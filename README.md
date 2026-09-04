@@ -358,6 +358,10 @@ Console output was not treated as a substitute for a structured experimental res
 
 The evaluation therefore became dependent on the real output contract of the experiment rather than an assumed one.
 
+## Evaluation
+
+The final closed-loop evaluation results are presented in the project pitch video. The repository contains the implementation and evaluation pipeline used to produce those results.
+
 ## Why This Matters
 
 This was more than a debugging fix.
