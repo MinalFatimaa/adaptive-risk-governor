@@ -1,0 +1,43 @@
+.letter-glitch {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0.18;
+  font-family: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 9px;
+  letter-spacing: 4px;
+  line-height: 1.5;
+  color: var(--glitch-c);
+}
+
+.letter-glitch span {
+  width: 100%;
+  padding: 24px;
+  word-break: break-all;
+  text-align: center;
+  transform: rotate(-1deg);
+  text-shadow:
+    0 0 10px var(--glitch-b),
+    0 0 24px var(--glitch-a);
+}
+
+.letter-glitch.center-vignette {
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    black 10%,
+    transparent 78%
+  );
+  mask-image: radial-gradient(
+    ellipse at center,
+    black 10%,
+    transparent 78%
+  );
+}
+
+.letter-glitch.outer-vignette {
+  opacity: 0.15;
+}
